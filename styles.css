@@ -169,7 +169,7 @@ button#closeModal:hover {
 
 /* Refined Responsive design adjustments */
 
-/* For tablets */
+/* For tablets and mobile*/
 @media only screen and (max-width: 920px) {
   body {
     margin: 0;
