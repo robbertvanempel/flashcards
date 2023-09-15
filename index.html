@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>// FLASHCARDS \\</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="flashcards_favicon.png" />
+  </head>
+  <body>
+    <header>
+      <h1>// Flashcards \\</h1>
+    </header>
+    <div>
+      <p class="underline">
+        door:
+        <a
+          class="underline"
+          target="_blank"
+          href="https://www.teylingen-college.nl/lee"
+          >Teylingen-College Leeuwenhorst</a
+        >
+      </p>
+    </div>
+    <main>
+      <section id="inputSection">
+        <h2 class="subtitle">Voer je woordjes of zinnen in</h2>
+        <textarea
+          id="inputArea"
+          class="input-area"
+          placeholder="Voer hier je woordjes of zinnen in, gescheiden door een nieuwe regel"
+        ></textarea>
+        <button id="submitWords">Oefenen</button>
+        <input type="file" id="uploadInput" style="display: none" />
+        <button onclick="document.getElementById('uploadInput').click()">
+          Woorden uploaden
+        </button>
+      </section>
+      <section id="flashcards" style="display: none">
+        <div id="card" class="card">
+          <div class="card-content">
+            <p id="wordDisplay"></p>
+            <p id="answerDisplay" style="display: none"></p>
+          </div>
+        </div>
+        <button id="showAnswer">Oplossing bekijken</button>
+        <button id="nextCard">Volgende</button>
+        <button id="editWords">Bewerk woorden</button>
+        <button id="downloadWordsBtn">Woorden downloaden</button>
+      </section>
+    </main>
+    <div id="errorModal" class="modal">
+      <div class="modal-content">
+        <p class="error-text">
+          Voer een even aantal woorden in, zodat ze in paren kunnen worden
+          gekoppeld.
+        </p>
+        <button id="closeModal">Begrepen</button>
+      </div>
+    </div>
+    <div id="invalidFileModal" class="modal">
+      <div class="modal-content">
+        <p class="error-text">
+          Dit bestand kun je niet uploaden. <br />Zoek een bestand waar ".json"
+          in staat.
+        </p>
+        <button id="closeInvalidFileModal">Begrepen</button>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
