@@ -167,3 +167,24 @@ button#closeModal:hover {
   border: 1px solid #ff3b00;
   color: #ff3b00;
 }
+
+/* Refined Responsive design adjustments */
+
+/* For tablets */
+@media only screen and (max-width: 920px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 9vw; /* Adjusting font size for tablet screens */
+  }
+
+  #inputArea {
+    width: calc(100% - 20px); /* subtracting double the padding */
+    padding: 10px;
+    box-sizing: border-box; /* to ensure padding is included in the width */
+  }
+}
