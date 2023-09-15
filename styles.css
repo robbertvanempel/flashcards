@@ -178,12 +178,16 @@ button#closeModal:hover {
   }
 
   header h1 {
-    font-size: 9vw; /* Adjusting font size for tablet screens */
+    font-size: 10vw; /* Adjusting font size for tablet screens */
   }
 
   #inputArea {
     width: calc(100% - 20px); /* subtracting double the padding */
     padding: 10px;
     box-sizing: border-box; /* to ensure padding is included in the width */
+  }
+
+  .subtitle {
+    font-size: 4vw;
   }
 }
